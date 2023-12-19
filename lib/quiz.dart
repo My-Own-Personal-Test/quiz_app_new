@@ -14,11 +14,7 @@ class Quiz extends StatefulWidget {
 class _QuizState extends State<Quiz> {
   var activeScreen = 'start-screen';
 
-  void switchScreen() {
-    setState(() {
-      activeScreen = 'questions-screen';
-    });
-  }
+  void switchScreen() => setState(() => activeScreen = 'questions-screen');
 
   @override
   Widget build(BuildContext contex) {
